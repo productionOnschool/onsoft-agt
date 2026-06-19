@@ -11,6 +11,7 @@ use Onsoft\Agt\Console\Comandos\OnsoftAgtResetAnoFiscalComando;
 use Onsoft\Agt\Console\Comandos\OnsoftAgtVerificarIntegridadeComando;
 use Onsoft\Agt\Console\Comandos\OnsoftAgtRegenerarSnapshotsComando;
 use Onsoft\Agt\Console\Comandos\OnsoftAgtConsultarSubmissoesComando;
+use Onsoft\Agt\Console\Comandos\OnsoftAgtGerarChaveSoftwareComando;
 use Onsoft\Agt\Servicos\ServicoAssinatura;
 use Onsoft\Agt\Servicos\ServicoApiAgt;
 use Onsoft\Agt\Servicos\ServicoSeries;
@@ -155,6 +156,7 @@ class OnsoftAgtServiceProvider extends ServiceProvider
                 OnsoftAgtVerificarIntegridadeComando::class,
                 OnsoftAgtRegenerarSnapshotsComando::class,
                 OnsoftAgtConsultarSubmissoesComando::class,
+                OnsoftAgtGerarChaveSoftwareComando::class,
             ]);
         }
 

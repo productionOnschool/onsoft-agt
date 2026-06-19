@@ -4,7 +4,7 @@
 ### Pacote Laravel de Faturação Eletrónica para Angola
 **Compatível com Laravel 10 · 11 · 12 — PHP 8.1+**
 
-[![Packagist](https://img.shields.io/packagist/v/onsoftadilsonjose/agt)](https://packagist.org/packages/onsoftadilsonjose/agt)
+[![Packagist](https://img.shields.io/packagist/v/productiononschool/onsoft-agt)](https://packagist.org/packages/productiononschool/onsoft-agt)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **Desenvolvedor:** Adilson Miguel · adilson2012jose@gmail.com · 2068417074  
@@ -17,7 +17,7 @@
 ## 📦 Instalação
 
 ```bash
-composer require onsoftadilsonjose/agt
+composer require productiononschool/onsoft-agt
 php artisan onsoft-agt:instalar
 ```
 
@@ -2329,7 +2329,7 @@ Três casos de teste:
 **Como correr no projecto real:**
 ```bash
 composer require --dev orchestra/testbench
-vendor/bin/phpunit vendor/onsoftadilsonjose/agt/tests/Feature/SnapshotIntegridadeTest.php
+vendor/bin/phpunit vendor/productiononschool/onsoft-agt/tests/Feature/SnapshotIntegridadeTest.php
 ```
 
 ### `php artisan onsoft-agt:regenerar-snapshots` — comando de remediação

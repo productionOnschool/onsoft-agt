@@ -1,59 +1,51 @@
 {
-  "name": "productiononschool/onsoft-agt",
-  "description": "Pacote AGT de Faturação Eletrónica para Angola — Laravel 10/11/12 — compatível com multi-tenant",
-  "keywords": [
-    "angola",
-    "agt",
-    "faturacao-eletronica",
-    "laravel",
-    "onsoft",
-    "pdf",
-    "factura"
-  ],
-  "homepage": "http://github.com/productionOnschool/onsoft-agt",
-  "license": "MIT",
-  "type": "library",
-  "authors": [
-    {
-      "name": "Adilson Miguel",
-      "email": "adilson2012jose@gmail.com"
-    }
-  ],
-  "require": {
-    "php": "^8.1",
-    "illuminate/support": "^10.0|^11.0|^12.0",
-    "illuminate/http": "^10.0|^11.0|^12.0",
-    "illuminate/database": "^10.0|^11.0|^12.0",
-    "illuminate/console": "^10.0|^11.0|^12.0",
-    "illuminate/queue": "^10.0|^11.0|^12.0",
-    "guzzlehttp/guzzle": "^7.0",
-    "barryvdh/laravel-dompdf": "^2.0|^3.0",
-    "bacon/bacon-qr-code": "^3.0"
-  },
-  "require-dev": {
-    "orchestra/testbench": "^8.0|^9.0|^10.0",
-    "phpunit/phpunit": "^10.0|^11.0"
-  },
-  "suggest": {
-    "ext-imagick": "Necessária para gerar o QR Code em PNG 350x350px, exactamente conforme a especificação oficial da AGT (https://quiosqueagt.minfin.gov.ao/doc-agt/faturacao-electronica/1/qrcode.html). Sem esta extensão, o pacote recorre a SVG como fallback funcional."
-  },
-  "autoload": {
-    "psr-4": {
-      "Onsoft\\Agt\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Onsoft\\Agt\\Testes\\": "tests/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Onsoft\\Agt\\OnsoftAgtServiceProvider"
-      ]
-    }
-  },
-  "minimum-stability": "stable",
-  "prefer-stable": true
+    "name": "productiononschool/onsoft-agt",
+    "description": "Pacote AGT de Faturação Eletrónica para Angola — Laravel 10/11/12 — compatível com multi-tenant",
+    "keywords": ["angola", "agt", "faturacao-eletronica", "laravel", "onsoft", "pdf", "factura"],
+    "homepage": "http://github.com/productionOnschool/onsoft-agt",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Adilson Miguel",
+            "email": "adilson2012jose@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/http": "^10.0|^11.0|^12.0",
+        "illuminate/database": "^10.0|^11.0|^12.0",
+        "illuminate/console": "^10.0|^11.0|^12.0",
+        "illuminate/queue": "^10.0|^11.0|^12.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "barryvdh/laravel-dompdf": "^2.0|^3.0",
+        "bacon/bacon-qr-code": "^3.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "suggest": {
+        "ext-imagick": "Necessária para gerar o QR Code em PNG 350x350px, exactamente conforme a especificação oficial da AGT (https://quiosqueagt.minfin.gov.ao/doc-agt/faturacao-electronica/1/qrcode.html). Sem esta extensão, o pacote recorre a SVG como fallback funcional."
+    },
+    "autoload": {
+        "psr-4": {
+            "Onsoft\\Agt\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Onsoft\\Agt\\Testes\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Onsoft\\Agt\\OnsoftAgtServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
